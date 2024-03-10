@@ -8,10 +8,25 @@ namespace WinForms
 {
     internal class MainFormModel
     {
-        public DateTime GeneralDateTime { get; set; }
+        /// <summary>
+        /// Общее время. Указывает рабочий день.
+        /// </summary>
+        public string GeneralDateTime { get; set; }
+        /// <summary>
+        /// Сколько нужно отработать.
+        /// </summary>
         public DateTime FullWorkTime { get; set; }
+        /// <summary>
+        /// Оставшееся рабочее время.
+        /// </summary>
         public DateTime RemainingWorkTime { get; set; }
+        /// <summary>
+        /// Время списанное на таски.
+        /// </summary>
         public List<DateTime> SpentTimes { get; set; }
+        /// <summary>
+        /// Существует ли JSON файл в директории для извлечения/записи данных.
+        /// </summary>
         public bool ExistData { get; set; }
     }
 }
